@@ -1,0 +1,218 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #534c4c;
+    display: flex;
+    width: 100%;
+    height: 10vw;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: #ffffff;
+    border: 2px solid wheat;
+    border-radius: 1rem;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.8rem; /* Aumenta o tamanho da fonte */
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffffff; /* Mantém a cor branca no hover */
+    padding: 28px 20px;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+footer {
+    background-color: #534c4c;
+    color: #ffffff;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    bottom: 0;
+    height: 10vw;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+footer h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 0 0;
+    font-size: 1.2rem;
+}
+
+.main-section {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/728/926/542/library-ladders-candles-shelves-wallpaper-preview.jpg');
+    background-size: cover;
+    min-width: 100vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex: 1 0 auto;
+}
+
+.main-section h1 {
+    padding: 10px;
+    font-size: 2.5rem;
+    color: black;
+    font-family: "Arial Black", serif;
+    font-weight: 1000;
+    background: burlywood;
+    border-radius: 2rem;
+}
+
+.main-section p {
+    padding: 5px;
+    color: black;
+    font-family: "Arial Black", serif;
+    font-weight: 1000;
+    font-size: 1.2rem;
+    background: burlywood;
+    border-radius: 2rem;
+}
+
+#text-section {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    background-color: white;
+}
+
+.grid-item.header {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    color: #ffffff; /* Muda a cor do link para branco */
+    text-decoration: none;
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+}
+
+a:hover {
+    color: #ffffff; /* Mantém a cor branca no hover */
+}
+
+#login-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+#login-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form label {
+    margin-bottom: 5px;
+}
+
+#login-form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#login-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+#login-button:hover {
+    background-color: #0056b3;
+}
+
+#editarLivro-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+#editarLivro-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#editarLivro-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#editarLivro-form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#editarLivro-form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#editarLivro-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+#editarLivro-button:hover {
+    background-color: #0056b3;
+}
