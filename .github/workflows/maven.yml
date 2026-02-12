@@ -33,7 +33,7 @@ jobs:
 
       - name: Runnings Unit Tests
         working-directory: Application
-        run: mvn -B clean test --file Application/pom.xml
+        run: mvn -B clean test --file pom.xml
         
   build:
     runs-on: ubuntu-latest
@@ -54,7 +54,7 @@ jobs:
         
     - name: Build with Maven
       working-directory: Application
-      run: mvn -B package --file Application/pom.xml clean package
+      run: mvn -B package --file pom.xml clean package
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
