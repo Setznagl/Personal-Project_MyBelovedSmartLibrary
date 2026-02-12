@@ -7,6 +7,8 @@
 # documentation.
 
 name: Java CI with Maven
+permissions:
+  contents: write
 
 on:
   pull_request:
