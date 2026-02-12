@@ -15,7 +15,7 @@
         <module>src/core/dao/src</module>
         <module>src/core/model/src</module>
         <module>src/core/repository/src</module>
-        <module>src/core/resources</module>
+        <module>src/core/resources/src</module>
         <module>src/core/services/src</module>
         <module>src/core/util/src</module>
         <module>src/core/webapp/src</module>
