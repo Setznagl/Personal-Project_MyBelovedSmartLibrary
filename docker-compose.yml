@@ -23,7 +23,7 @@ services:
   tomcat:
     build:
         context: .
-        dockerfile: Application/docker/Tomcat/Dockerfile
+        dockerfile: ./Application/docker/Tomcat/Dockerfile
         args:
           HOST: postgres
           PORT: ${DB_HOST_PORT:-5432}
