@@ -21,7 +21,7 @@
                     <os>
                         <family>Linux</family>
                         <name>Ubuntu</name>
-                        <version>18.04</version>
+                        <version>latest</version>
                     </os>
                     <jdk>17</jdk>
                     <activeByDefault>true</activeByDefault>
@@ -37,7 +37,7 @@
                     <os>
                         <family>Linux</family>
                         <name>Ubuntu</name>
-                        <version>18.04</version>
+                        <version>latest</version>
                     </os>
                     <jdk>17</jdk>
                     <activeByDefault>false</activeByDefault>

@@ -27,7 +27,7 @@ jobs:
       matrix:
         jdk: ['17']
         vendor: ['corretto']
-        os: ['ubuntu:18.04']
+        os: ['ubuntu:latest']
     steps:
       - uses: actions/checkout@v4
       
@@ -50,7 +50,7 @@ jobs:
       matrix:
         jdk: ['17']
         vendor: ['corretto']
-        os: ['ubuntu:18.04']
+        os: ['ubuntu:latest']
     steps:
     - uses: actions/checkout@v4
     
@@ -80,7 +80,7 @@ jobs:
       matrix:
         jdk: [ '17' ]
         vendor: [ 'corretto' ]
-        os: [ 'ubuntu:18.04' ]
+        os: [ 'ubuntu:latest' ]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Docker Buildx
