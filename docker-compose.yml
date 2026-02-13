@@ -16,7 +16,7 @@ services:
         - "${DB_HOST_PORT:-5432}:5432"
     volumes:
     - postgree-data-volume:/var/lib/postgresql/data
-    - ../Application/docker/PostgreSQL/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    - Application/docker/PostgreSQL/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
     networks:
       - container-internal-network
 

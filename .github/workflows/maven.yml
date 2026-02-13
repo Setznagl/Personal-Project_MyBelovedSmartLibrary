@@ -22,7 +22,7 @@ on:
     branches: [ '*' ]   
 jobs:
   test:
-    runs-on: ${{matrix.os}}
+    runs-on: ${{matrix.os}} || self-hosted
     strategy:
       matrix:
         jdk: ['17']
@@ -39,7 +39,7 @@ jobs:
           cache: maven
 
       - name: Runnings Unit Tests
-        working-directory: Application
+        working-directory: .
         run: mvn -B clean test --file pom.xml
 
 
@@ -62,7 +62,7 @@ jobs:
         cache: maven
         
     - name: Build with Maven
-      working-directory: Application
+      working-directory: .
       run: mvn -B package --file pom.xml clean package
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
