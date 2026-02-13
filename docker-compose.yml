@@ -1,0 +1,55 @@
+name: JSP_Servlet_Library_Simple_Management_System
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: PostgreSQL_Database_Container
+    restart: always
+    environment:
+      # Data from GitHub Actions secrets and variables
+      # Pattern: jdbc:postgresql://service_name:service_port/database_name
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATASOURCE_NAME}
+    ports:
+        # If fails to connect will fall back to default port 5432
+        - "${DB_HOST_PORT:-5432}:5432"
+    volumes:
+    - postgree-data-volume:/var/lib/postgresql/data
+    - ../Application/docker/PostgreSQL/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - container-internal-network
+
+  tomcat:
+    build:
+        context: .
+        dockerfile: Application/docker/Tomcat/Dockerfile
+        args:
+          HOST: postgres
+          PORT: ${DB_HOST_PORT:-5432}
+          USERNAME: ${DB_USER}
+          PASSWORD: ${DB_PASSWORD}
+          PROFILE: ${PROFILE:-dev}
+    container_name: Tomcat_Servlet_Web_Container
+    restart: always
+    ports:
+      # If fails to connect will fall back to default port 8080
+      - "${TOMCAT_HOST_PORT:-8080}:8080"
+    depends_on:
+      - postgres
+    environment:
+      # nome do serviço Postgres
+      DB_HOST: postgres
+      DB_PORT: ${DB_HOST_PORT:-5432}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_DATASOURCE_NAME}
+    networks:
+      - container-internal-network
+
+networks:
+  container-internal-network:
+    driver: bridge
+
+volumes:
+  postgree-data-volume:

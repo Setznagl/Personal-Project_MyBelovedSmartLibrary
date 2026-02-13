@@ -10,15 +10,50 @@
     <packaging>pom</packaging>
     <name>MyBelovedSmartLibrary</name>
 
+    <profiles>
+            <profile>
+                <id>dev</id>
+                <properties>
+                    <project.java.version>17</project.java.version>
+                    <project.java.vendor>Amazon Corretto</project.java.vendor>
+                </properties>
+                <activation>
+                    <os>
+                        <family>Linux</family>
+                        <name>Ubuntu</name>
+                        <version>18.04</version>
+                    </os>
+                    <jdk>17</jdk>
+                    <activeByDefault>true</activeByDefault>
+                </activation>
+            </profile>
+            <profile>
+                <id>prod</id>
+                <properties>
+                    <project.java.version>17</project.java.version>
+                    <project.java.vendor>Amazon Corretto</project.java.vendor>
+                </properties>
+                <activation>
+                    <os>
+                        <family>Linux</family>
+                        <name>Ubuntu</name>
+                        <version>18.04</version>
+                    </os>
+                    <jdk>17</jdk>
+                    <activeByDefault>false</activeByDefault>
+                </activation>
+            </profile>
+    </profiles>
+
     <modules>
         <!-- <module>src/core/controller/src</module> -->
-        <!-- <module>src/core/dao/src</module> -->
-        <!-- <module>src/core/model/src</module> -->
-        <!-- <module>src/core/repository/src</module> -->
+        <module>Application/src/core/dao/src</module>
+        <module>Application/src/core/model/src</module>
+        <module>Application/src/core/repository/src</module>
         <!-- <module>src/core/resources/src</module> -->
         <!-- <module>src/core/services/src</module> -->
         <!-- <module>src/core/util/src</module> -->
-        <!-- <module>src/core/webapp/src</module> -->
+        <module>Application/src/core/webapp/src</module>
     </modules>
 
     <properties>
@@ -98,5 +133,3 @@
         </plugins>
     </build>
 </project>
-
-<!-- a -->
