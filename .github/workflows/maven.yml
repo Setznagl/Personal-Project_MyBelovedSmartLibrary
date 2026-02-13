@@ -22,7 +22,7 @@ on:
     branches: [ '*' ]   
 jobs:
   test:
-    runs-on: ${{matrix.os}} || self-hosted
+    runs-on: ${{matrix.os}}
     strategy:
       matrix:
         jdk: ['17']
