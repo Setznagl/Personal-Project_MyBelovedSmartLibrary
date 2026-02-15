@@ -64,7 +64,7 @@
    </properties>
 
    <dependencies>
-        <!-- -->
+        <!-- -->  <!-- -->
        <dependency>
            <groupId>org.hibernate.orm</groupId>
            <artifactId>hibernate-core</artifactId>
