@@ -12,11 +12,9 @@ permissions:
 
 on:
   push:
-    # Run this workflow on pushes to the default branch
-    branches: 
+    # Run this workflow on pushes
+    branches:
       - develop
-      - hotfix
-      - release
   pull_request:
     # Run this workflow on pull requests targeting the default branch
     branches: [ '*' ]   

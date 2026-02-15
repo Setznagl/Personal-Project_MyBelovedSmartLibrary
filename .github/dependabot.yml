@@ -6,6 +6,7 @@
 version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/Application/" # Location of package manifests
+    directory: "." # Location of package manifests
     schedule:
-      interval: "weekly"
+      interval: "daily" # Check for updates every 30 minutes
+    open-pull-requests-limit: 10 # Limit the number of open PRs to
