@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/conf/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/docs/appdev/sample/web/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/docs/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/examples/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/host-manager/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/manager/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/ROOT/WEB-INF/web.xml" />
+  </component>
   <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Application/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/src/core/webapp/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/src/core/dao/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/src/core/model/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/src/core/repository/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/src/core/webapp/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/web/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/web/src/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Application/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/src/core/model/src/pom.xml" />
       </set>
     </option>
   </component>
