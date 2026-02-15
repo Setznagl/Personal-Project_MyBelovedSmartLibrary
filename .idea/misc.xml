@@ -23,6 +23,12 @@
         <option value="$PROJECT_DIR$/Application/core/web/pom.xml" />
         <option value="$PROJECT_DIR$/Application/core/web/src/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/controller/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/dao/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/repository/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/util/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/services/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/resources/src/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Application/core/controller/src/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/core/controller/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/dao/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/dao/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/model/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/model/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/repository/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/repository/src/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/core/resources/src/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/core/resources/src/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/core/services/src/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/core/services/src/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/core/util/src/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/core/util/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/core/web/src/src/main/java" charset="UTF-8" />
