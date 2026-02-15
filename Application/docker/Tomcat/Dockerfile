@@ -10,7 +10,7 @@ ARG PROFILE
 # Copy the entire project to the container
 COPY ./Application/core/web .
 # Build the application using Maven using docker-compose arguments provided from GitHub Actions
-RUN mvn clean package -Dmaven.test.skip=true
+RUN mvn clean package
 
 
 # Step 2: Running Tomcat with the application
