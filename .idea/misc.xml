@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/conf/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/docs/appdev/sample/web/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/docs/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/examples/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/host-manager/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/manager/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/ROOT/WEB-INF/web.xml" />
+  </component>
+  <component name="KubernetesApiProvider">{}</component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
