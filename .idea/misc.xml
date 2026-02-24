@@ -9,13 +9,27 @@
     <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/host-manager/WEB-INF/web.xml" />
     <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/manager/WEB-INF/web.xml" />
     <file type="web" url="file://$PROJECT_DIR$/apache-tomcat-11.0.18/webapps/ROOT/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/Application/core/web/target/module-web-1.0-SNAPSHOT/WEB-INF/web.xml" />
   </component>
-  <component name="KubernetesApiProvider">{}</component>
+  <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/Application/core/util/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/dao/src/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/config/src/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/web/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/util/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/model/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/config/pom.xml" />
+        <option value="$PROJECT_DIR$/Application/core/dao/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Application/core/repository/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">

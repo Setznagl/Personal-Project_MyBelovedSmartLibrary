@@ -6,32 +6,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.smartlibrary.setznagl</groupId>
+        <groupId>core.smartlibrary.setznagl</groupId>
         <artifactId>my-beloved-smart-library</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../../../pom.xml</relativePath>
+        <relativePath>../../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>module-model</artifactId>
+    <artifactId>core.config</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
-        <!--  -->
+        <!-- Access to the environment variables -->
+        <!-- Source: https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java -->
         <dependency>
-            <groupId>jakarta.platform</groupId>
-            <artifactId>jakarta.jakartaee-web-api</artifactId>
-            <version>10.0.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.42</version>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>dotenv-java</artifactId>
             <scope>provided</scope>
         </dependency>
     </dependencies>
 
     <build>
+        <sourceDirectory>./src</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
