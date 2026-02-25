@@ -68,8 +68,8 @@ jobs:
         uses: advanced-security/maven-dependency-submission-action@v4
         with:
           directory: .
+          ignore-maven-wrapper: true
           #  Default value is pom.xml, but you can specify a different file if your project has a non-standard structure
-          pom-file: pom.xml
 
   docker-compose-deployment:
     runs-on: ${{matrix.os}}
