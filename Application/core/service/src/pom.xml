@@ -6,13 +6,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>core</groupId>
-        <artifactId>Application</artifactId>
+        <groupId>com.smartlibrary.setznagl</groupId>
+        <artifactId>my-beloved-smart-library</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>module-util</artifactId>
+    <artifactId>core.services</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>

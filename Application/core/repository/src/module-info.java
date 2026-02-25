@@ -1,7 +1,6 @@
 module core.repository {
-  requires transitive core.dao; // <- depend on core.dao module
-  requires jakarta.jakartaee.web.api;
+  requires jakarta.persistence;
   //requires core.model; <- already available via core.dao "transitive" export
 
-  exports ReviewRepository to core.services;
+  exports Review to core.dao;
 }
