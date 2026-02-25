@@ -1,0 +1,10 @@
+package ENUMS;
+
+public enum BookType {
+  PERSONAL_DEVELOPMENT,
+  CLASSIC,
+  LEISURE,
+  DEV_BOOK,
+  ECONOMY,
+  PHILOSOPHY
+}

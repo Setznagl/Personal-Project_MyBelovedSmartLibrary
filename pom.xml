@@ -4,85 +4,96 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.smartlibrary.setznagl</groupId>
+    <groupId>core.smartlibrary.setznagl</groupId>
     <artifactId>my-beloved-smart-library</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>MyBelovedSmartLibrary</name>
 
     <profiles>
-            <profile>
-                <id>dev</id>
-                <properties>
-                    <project.java.version>17</project.java.version>
-                    <project.java.vendor>Amazon Corretto</project.java.vendor>
-                </properties>
-                <activation>
-                    <os>
-                        <family>Linux</family>
-                        <name>Ubuntu</name>
-                        <version>latest</version>
-                    </os>
-                    <jdk>17</jdk>
-                    <activeByDefault>true</activeByDefault>
-                </activation>
-            </profile>
-            <profile>
-                <id>prod</id>
-                <properties>
-                    <project.java.version>17</project.java.version>
-                    <project.java.vendor>Amazon Corretto</project.java.vendor>
-                </properties>
-                <activation>
-                    <os>
-                        <family>Linux</family>
-                        <name>Ubuntu</name>
-                        <version>latest</version>
-                    </os>
-                    <jdk>17</jdk>
-                    <activeByDefault>false</activeByDefault>
-                </activation>
-            </profile>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <project.java.version>17</project.java.version>
+                <project.java.vendor>Amazon Corretto</project.java.vendor>
+            </properties>
+            <activation>
+                <os>
+                    <family>Linux</family>
+                    <name>Ubuntu</name>
+                    <version>latest</version>
+                </os>
+                <jdk>17</jdk>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <project.java.version>17</project.java.version>
+                <project.java.vendor>Amazon Corretto</project.java.vendor>
+            </properties>
+            <activation>
+                <os>
+                    <family>Linux</family>
+                    <name>Ubuntu</name>
+                    <version>latest</version>
+                </os>
+                <jdk>17</jdk>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
     </profiles>
 
     <modules>
-        <!-- <module>src/core/controller/src</module> -->
-        <!--  <module>Application/core/dao/src</module> -->
-       <module>Application/core/model/src</module>
-        <!-- <module>Application/core/repository/src</module> -->
-        <!-- <module>src/core/resources/src</module> -->
-        <!-- <module>src/core/services/src</module> -->
-        <!-- <module>src/core/util/src</module> -->
-        <module>Application/core/web </module>
-   </modules>
+        <!--
+        <module>Application/core/controller/src</module>
+        <module>Application/core/resources/src</module>
+        <module>Application/core/services/src</module>
+        <module>Application/core/repository</module>
+                 -->
+        <module>Application/core/config</module>
+        <module>Application/core/dao</module>
+        <module>Application/core/util</module>
+        <module>Application/core/model</module>
+        <module>Application/core/web</module>
 
-   <properties>
-       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-       <maven.compiler.source>17</maven.compiler.source>
-       <maven.compiler.target>17</maven.compiler.target>
-       <junit.version>5.10.0</junit.version>
-   </properties>
+    </modules>
 
-   <dependencies>
-        <!-- -->  <!-- -->
-       <dependency>
-           <groupId>org.hibernate.orm</groupId>
-           <artifactId>hibernate-core</artifactId>
-           <version>6.3.1.Final</version>
-           <scope>compile</scope>
-       </dependency>
-       <dependency>
-           <groupId>org.postgresql</groupId>
-           <artifactId>postgresql</artifactId>
-           <version>42.7.9</version>
-           <scope>compile</scope>
-       </dependency>
-       <dependency>
-           <groupId>org.projectlombok</groupId>
-           <artifactId>lombok</artifactId>
-           <version>1.18.42</version>
-           <scope>compile</scope>
-       </dependency>
-   </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <junit.version>5.10.0</junit.version>
+        <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
+        <lombok.version>1.18.42</lombok.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>5.0.0</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.persistence</groupId>
+                <artifactId>jakarta.persistence-api</artifactId>
+                <version>${jakarta.persistence.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.cdimascio</groupId>
+                <artifactId>dotenv-java</artifactId>
+                <version>3.2.0</version>
+                <scope>compile</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

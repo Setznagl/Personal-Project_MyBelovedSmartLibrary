@@ -1,19 +1,19 @@
+package Review;
+
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
-import java.util.List;
-import java.util.UUID;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Supplier;
-
-public interface ReviewRepository extends ReviewDAO {
+public interface ReviewRepository {
 
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("PostgresPU");
     EntityManager entityManager = entityManagerFactory.createEntityManager();
 
+
+
+}
+
+/*
     Consumer<Review> save = review -> {
       entityManager.getTransaction ().begin ();
       entityManager.persist (review);
@@ -41,5 +41,4 @@ public interface ReviewRepository extends ReviewDAO {
     };
 
     Supplier<Long> countAll = reviewDAOCountAll;
-
-}
+ */

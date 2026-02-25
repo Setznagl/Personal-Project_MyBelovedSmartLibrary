@@ -7,6 +7,17 @@ version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directory: "." # Location of package manifests
+    target-branch: develop # The branch you want Dependabot to create pull requests against.
+    groups:
+      dependency-updates:
+        patterns:
+          - "*" # Update all dependencies
+    labels:
+      - "dependabot"
+      - "dependency-maintenance"
+    commit-message:
+      prefix: "chore" # using Conventional Commits format: chore: update dependency ...
+      include: "scope" # include the name of the dependency in the commit message
     schedule:
       interval: "daily" # Check for updates every 30 minutes
     open-pull-requests-limit: 10 # Limit the number of open PRs to
