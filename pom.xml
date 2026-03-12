@@ -65,8 +65,8 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <junit.version>5.10.0</junit.version>
-        <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
-        <lombok.version>1.18.42</lombok.version>
+        <jakarta.persistence.version>3.2.0</jakarta.persistence.version>
+        <lombok.version>1.18.44</lombok.version>
     </properties>
 
     <dependencyManagement>
@@ -74,7 +74,7 @@
             <dependency>
                 <groupId>jakarta.servlet</groupId>
                 <artifactId>jakarta.servlet-api</artifactId>
-                <version>5.0.0</version>
+                <version>6.1.0</version>
                 <scope>compile</scope>
             </dependency>
             <dependency>
